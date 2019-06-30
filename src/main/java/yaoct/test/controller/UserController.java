@@ -20,6 +20,7 @@ public class UserController {
 	@RequestMapping(name="/users",method=RequestMethod.GET)
 	@ResponseBody
 	List<User> mmm(){
+		System.out.println(123);
 		return userService.selectUsers();
 	}
 }
